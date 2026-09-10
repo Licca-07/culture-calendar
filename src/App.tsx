@@ -99,7 +99,6 @@ export default function App() {
       <header className="hero">
         <p className="eyebrow">Kyoto ↔ Tokyo</p>
         <h1>Culture Calendar</h1>
-        <p className="lede">音楽と美術だけを、静かに並べる。</p>
         {artistSeed?.makiImport?.status === 'missing' ? (
           <p className="seed-note">
             音楽はアーティスト起点。MAKIリスト未取り込み（いま core:{" "}
