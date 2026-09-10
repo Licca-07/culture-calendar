@@ -5,30 +5,60 @@
     "primary": "core_artists",
     "secondary": "related_artists",
     "cities": ["tokyo", "kyoto"],
-    "notes": "音楽イベントはまず core に出ているアーティストの公演を拾う。次に related（共演・同レーベル・近いシーン）を広げる。MAKI実装時の羅列リストを core に移植する想定。"
+    "notes": "音楽イベントはまず core 出演を拾う。次に共演・同シーンの related を広げる。出典は MAKI のアーティスト選択UI。"
   },
   "core": [
-    {
-      "id": "halley",
-      "name": "HALLEY",
-      "priority": 1,
-      "links": {
-        "official": "https://www.halley-official.com/"
-      },
-      "notes": "Favorite Tea / Born with Love Pt. 1。MAKIリスト確認後に順位調整"
-    }
+    { "id": "sakanaction", "name": "サカナクション", "priority": 1 },
+    { "id": "breimen", "name": "BREIMEN", "priority": 2 },
+    { "id": "summit", "name": "SUMMIT", "priority": 3 },
+    { "id": "tempalay", "name": "Tempalay", "priority": 4 },
+    { "id": "yonige", "name": "yonige", "priority": 5 },
+    { "id": "dygl", "name": "DYGL", "priority": 6 },
+    { "id": "vaundy", "name": "Vaundy", "priority": 7 },
+    { "id": "geloomy", "name": "Geloomy", "priority": 8 },
+    { "id": "nulbarich", "name": "Nulbarich", "priority": 9 },
+    { "id": "kroi", "name": "Kroi", "priority": 10 },
+    { "id": "durdn", "name": "DURDN", "priority": 11 },
+    { "id": "tamtam", "name": "TAMTAM", "priority": 12 },
+    { "id": "mono-no-aware", "name": "mono no aware", "priority": 13 },
+    { "id": "halley", "name": "HALLEY", "priority": 14 },
+    { "id": "shin-tokyo", "name": "新東京", "priority": 15 },
+    { "id": "chilldspot", "name": "chilldspot", "priority": 16 },
+    { "id": "pictured-resort", "name": "Pictured Resort", "priority": 17 },
+    { "id": "billyrrom", "name": "Billyrrom", "priority": 18 },
+    { "id": "luv", "name": "luv", "priority": 19 },
+    { "id": "sirup", "name": "SIRUP", "priority": 20 },
+    { "id": "stuts", "name": "STUTS", "priority": 21 },
+    { "id": "haruomi-hosono", "name": "Haruomi Hosono", "priority": 22 },
+    { "id": "cornelius", "name": "Cornelius", "priority": 23 },
+    { "id": "millennium-parade", "name": "millennium parade", "priority": 24 },
+    { "id": "tokimeki-records", "name": "TOKIMEKI Records", "priority": 25, "notes": "レーベル枠。配下アーティスト公演も関連として拾ってよい" },
+    { "id": "doooo", "name": "doooo", "priority": 26 },
+    { "id": "the-spellbound", "name": "the spellbound", "priority": 27 },
+    { "id": "dongurizu", "name": "どんぐりず", "priority": 28 },
+    { "id": "mitsume", "name": "mitsume", "priority": 29 },
+    { "id": "lucky-kilimanjaro", "name": "Lucky Kilimanjaro", "priority": 30 },
+    { "id": "mega-shinnosuke", "name": "mega shinnosuke", "priority": 31 },
+    { "id": "ovall", "name": "Ovall", "priority": 32 },
+    { "id": "king-gnu", "name": "King Gnu", "priority": 33 },
+    { "id": "suchmos", "name": "Suchmos", "priority": 34 },
+    { "id": "gen-hoshino", "name": "星野源", "priority": 35 },
+    { "id": "bts", "name": "BTS", "priority": 36 },
+    { "id": "cashmere-cat", "name": "Cashmere Cat", "priority": 37 },
+    { "id": "underworld", "name": "Underworld", "priority": 38 },
+    { "id": "justin-bieber", "name": "Justin Bieber", "priority": 39 },
+    { "id": "major-lazer", "name": "Major Lazer", "priority": 40 },
+    { "id": "dj-khaled", "name": "DJ Khaled", "priority": 41 },
+    { "id": "calvin-harris", "name": "Calvin Harris", "priority": 42 },
+    { "id": "steve-aoki", "name": "Steve Aoki", "priority": 43 },
+    { "id": "kygo", "name": "Kygo", "priority": 44 },
+    { "id": "ariana-grande", "name": "Ariana Grande", "priority": 45 }
   ],
-  "related": [
-    {
-      "id": "placeholder-related",
-      "name": "（MAKIリストから関連を追加）",
-      "relatedTo": ["halley"],
-      "priority": 50,
-      "notes": "共演者・同シーンを後で埋める"
-    }
-  ],
+  "related": [],
   "makiImport": {
-    "status": "missing",
-    "instruction": "MAKI実装で羅列したアーティスト名を core[] に貼る。見つか次第 status を imported にする。"
+    "status": "imported",
+    "count": 45,
+    "source": "MAKI UI screenshot 2026-09-10",
+    "instruction": "related は core の共演・対バン・同レーベルから随時追加"
   }
 }
