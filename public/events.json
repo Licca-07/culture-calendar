@@ -1,0 +1,122 @@
+[
+  {
+    "id": "halley-2026-11-19",
+    "title": "HALLEY Born with Love Tour 2026",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "代官山 SPACE ODD",
+    "start": "2026-11-19",
+    "end": "2026-11-19",
+    "url": "https://www.halley-official.com/",
+    "source": "official",
+    "notes": "Open 18:15 / Start 19:00。Favorite Tea の流れ"
+  },
+  {
+    "id": "louvre-nact-2026",
+    "title": "ルーヴル美術館展 ルネサンス",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "国立新美術館",
+    "start": "2026-09-09",
+    "end": "2026-12-13",
+    "url": "https://www.nact.jp/exhibition_special/2026/louvre2026/",
+    "source": "tokyo-art-beat",
+    "notes": "火休館（祝日例外あり）"
+  },
+  {
+    "id": "uno-eki-kyoto-2026",
+    "title": "宇野亞喜良展 AQUIRAX UNO",
+    "type": "art",
+    "city": "kyoto",
+    "venue": "美術館「えき」KYOTO",
+    "start": "2026-09-09",
+    "end": "2026-10-25",
+    "url": "https://ja.kyoto.travel/event/single.php?event_id=15145",
+    "source": "official",
+    "notes": "京都駅直結"
+  },
+  {
+    "id": "agawa-billboard-2026-09-10",
+    "title": "阿川泰子 CROSSOVER NIGHT 2026",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "Billboard Live TOKYO",
+    "start": "2026-09-10",
+    "end": "2026-09-10",
+    "url": "https://www.billboard-live.com/tokyo/show?date=2026-09-10&event_id=ev-21471",
+    "source": "livenex",
+    "notes": "1st 17:00 / 2nd 20:00"
+  },
+  {
+    "id": "elephant-gym-wwwx-2026-09-10",
+    "title": "Elephant Gym / MASS OF THE FERMENTING DREGS",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "渋谷 WWW X",
+    "start": "2026-09-10",
+    "end": "2026-09-10",
+    "url": "https://www-shibuya.jp/schedule/019788.php",
+    "source": "livescopra",
+    "notes": "FLAKE 20th 関連"
+  },
+  {
+    "id": "kyoto-onpaku-2026",
+    "title": "京都音楽博覧会2026",
+    "type": "music",
+    "city": "kyoto",
+    "venue": "京都",
+    "start": "2026-10-10",
+    "end": "2026-10-11",
+    "url": "https://kyotoonpaku.net/2026/",
+    "source": "official",
+    "notes": "2DAYS"
+  },
+  {
+    "id": "marimekko-teien-2026",
+    "title": "マリメッコ展 模様のちから",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "東京都庭園美術館",
+    "start": "2026-10-03",
+    "end": "2026-12-20",
+    "url": "https://www.teien-art-museum.ne.jp/exhibition/20261003-1220_marimekko/",
+    "source": "tokyo-art-beat",
+    "notes": "白金台"
+  },
+  {
+    "id": "10feet-kyoto-2026-10-03",
+    "title": "10-FEET 壊れて消えるまで FINAL",
+    "type": "music",
+    "city": "kyoto",
+    "venue": "みやこめっせ",
+    "start": "2026-10-03",
+    "end": "2026-10-03",
+    "url": "https://10-feet.kyoto/pages/kowaretekierumade_final",
+    "source": "livenex",
+    "notes": ""
+  },
+  {
+    "id": "moon-art-shimokita-2026",
+    "title": "ムーンアートナイト下北沢",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "下北線路街 空き地ほか",
+    "start": "2026-09-18",
+    "end": "2026-10-04",
+    "url": "https://www.tokyoartbeat.com/articles/-/best-exhibitions-starting-in-september-2026-202608",
+    "source": "tokyo-art-beat",
+    "notes": "街なか美術"
+  },
+  {
+    "id": "osamu-goods-kyoto-2026",
+    "title": "OSAMU GOODS 50th展",
+    "type": "art",
+    "city": "kyoto",
+    "venue": "大丸ミュージアム〈京都〉",
+    "start": "2026-09-13",
+    "end": "2026-10-05",
+    "url": "https://www.leafkyoto.net/event/260906-kyoto-osamugoods/",
+    "source": "official",
+    "notes": ""
+  }
+]
