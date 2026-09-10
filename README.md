@@ -3,18 +3,38 @@
 京都⇄東京の **音楽 + 美術** イベントカレンダー（公開Webアプリ）。  
 Notion にはこのサイトのURLを貼るだけ。
 
-**更新頻度: 月1回**（`docs/UPDATE_CADENCE.md`）
+**更新頻度: 月1回**（[`docs/UPDATE_CADENCE.md`](./docs/UPDATE_CADENCE.md)）
+
+## 公開URL
+
+| 場所 | URL |
+|------|-----|
+| GitHub（ソース・公開） | https://github.com/Licca-07/culture-calendar |
+| GitHub Pages | https://licca-07.github.io/culture-calendar/ |
+| Vercel（恒久・推奨） | 下の「Vercelセットアップ」後に確定 |
+
+仮デプロイ（約60分で失効）: https://temporary-flying-aspen-d5d8boq.vercel.app  
+Claim: https://vercel.com/claim-deployment?code=c5e4ab7c-2733-411d-aab4-897017e4de68
+
+## Vercelセットアップ（1回だけ・恒久公開）
+
+1. https://vercel.com/new を開く（GitHub連携）
+2. `Licca-07/culture-calendar` を Import
+3. Framework: **Vite** / Build: `npm run build` / Output: `dist`
+4. Deploy
+5. 出たURLを Notion に貼る
+
+以降は **月1で `events.json` を更新 → `main` に push** するだけで自動反映。
 
 ## データソース
 
-詳細は [`SOURCES.md`](./SOURCES.md) / [`docs/MUSIC_ARTISTS.md`](./docs/MUSIC_ARTISTS.md)。
-
 | 分野 | 本線 |
 |------|------|
-| 美術 | **Tokyo Art Beat** |
-| 音楽 | **MAKI由来の core artists → related**（LIVENEX/公式は検索補完） |
+| 美術 | Tokyo Art Beat |
+| 音楽 | MAKI core artists → related（LIVENEX/公式は補完） |
 
-データは `public/events.json` / `public/artists.json`。
+- `public/artists.json` … 追う作家
+- `public/events.json` … カレンダー本体
 
 ## 開発
 
@@ -23,37 +43,11 @@ npm install
 npm run dev
 ```
 
-## デプロイ（Vercel）
+## 月次更新
 
-- GitHub `main` に push → Vercel が自動ビルド・公開
-- フレームワーク: Vite
-- ビルド: `npm run build` / 出力: `dist`
-
-## Notion
-
-1. 公開URLをコピー
-2. Notion にブックマーク／埋め込みで貼る
-3. 月次更新後も同じURLのまま
-
-## イベント追加
-
-`public/events.json` にオブジェクトを足す。
-
-```json
-{
-  "id": "unique-id",
-  "title": "イベント名",
-  "type": "music",
-  "city": "tokyo",
-  "venue": "会場",
-  "start": "2026-10-01",
-  "end": "2026-10-01",
-  "url": "https://...",
-  "source": "official",
-  "artists": ["halley"],
-  "notes": ""
-}
+```text
+artists.json の core → related で東京/京都の音楽を直近2〜3ヶ月分拾って
+events.json を更新。美術は Tokyo Art Beat 視点で。過去分は削除。
 ```
 
-`type`: `music` | `art`  
-`city`: `tokyo` | `kyoto`
+詳細: `docs/UPDATE_CADENCE.md`

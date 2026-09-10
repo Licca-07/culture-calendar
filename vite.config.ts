@@ -1,7 +1,8 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-// https://vite.dev/config/
+// Relative base so GitHub Pages (/culture-calendar/) and Vercel (/) both work.
 export default defineConfig({
+  base: './',
   plugins: [react()],
 })
