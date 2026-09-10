@@ -1,18 +1,20 @@
 # Culture Calendar
 
-京都⇄東京の **音楽 + 美術** イベントカレンダーWebアプリ。  
-Notion にはこのアプリのURLを貼るだけでよい。
+京都⇄東京の **音楽 + 美術** イベントカレンダー（公開Webアプリ）。  
+Notion にはこのサイトのURLを貼るだけ。
 
-## データソース方針
+**更新頻度: 月1回**（`docs/UPDATE_CADENCE.md`）
 
-詳細は [`SOURCES.md`](./SOURCES.md)。
+## データソース
+
+詳細は [`SOURCES.md`](./SOURCES.md) / [`docs/MUSIC_ARTISTS.md`](./docs/MUSIC_ARTISTS.md)。
 
 | 分野 | 本線 |
 |------|------|
 | 美術 | **Tokyo Art Beat** |
 | 音楽 | **MAKI由来の core artists → related**（LIVENEX/公式は検索補完） |
 
-v1 は自動スクレイピングせず、`public/events.json` を更新して公開する。
+データは `public/events.json` / `public/artists.json`。
 
 ## 開発
 
@@ -21,11 +23,17 @@ npm install
 npm run dev
 ```
 
-## Notion への載せ方
+## デプロイ（Vercel）
 
-1. Vercel 等にデプロイして公開URLを得る
-2. Notion ページにそのURLを貼る（ブックマーク／埋め込み）
-3. 予定の更新は `public/events.json` を編集 → 再デプロイ
+- GitHub `main` に push → Vercel が自動ビルド・公開
+- フレームワーク: Vite
+- ビルド: `npm run build` / 出力: `dist`
+
+## Notion
+
+1. 公開URLをコピー
+2. Notion にブックマーク／埋め込みで貼る
+3. 月次更新後も同じURLのまま
 
 ## イベント追加
 
@@ -41,7 +49,8 @@ npm run dev
   "start": "2026-10-01",
   "end": "2026-10-01",
   "url": "https://...",
-  "source": "livenex",
+  "source": "official",
+  "artists": ["halley"],
   "notes": ""
 }
 ```
