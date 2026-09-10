@@ -13,8 +13,8 @@ Notion にはこのサイトのURLを貼るだけ。
 | GitHub Pages | https://licca-07.github.io/culture-calendar/ |
 | Vercel（恒久・推奨） | 下の「Vercelセットアップ」後に確定 |
 
-仮デプロイ（約60分で失効）: https://temporary-flying-aspen-d5d8boq.vercel.app  
-Claim: https://vercel.com/claim-deployment?code=c5e4ab7c-2733-411d-aab4-897017e4de68
+仮デプロイ（約60分で失効）: https://temporary-brisk-meteor-5izq1x0.vercel.app  
+Claim: https://vercel.com/claim-deployment?code=7243014e-efcf-45d0-9f97-37c41c64de67
 
 ## Vercelセットアップ（1回だけ・恒久公開）
 
