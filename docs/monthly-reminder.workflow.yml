@@ -1,0 +1,59 @@
+name: Monthly calendar reminder
+
+on:
+  schedule:
+    # 毎月1日 00:10 JST = 前月最終日 15:10 UTC（UTC cron）
+    # 実際は 1日 15:10 UTC ≈ 翌2日 00:10 JST になるため、
+    # 月末付近の取りこぼしを避ける目的で 1日 JST 朝に寄せる:
+    # 0:10 JST = 前日 15:10 UTC → day-of-month は「前月の最終」になりがちなので
+    # シンプルに毎月1日 01:00 UTC（= 10:00 JST）で Issue 作成
+    - cron: "0 1 1 * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create monthly update issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `Monthly culture calendar update — ${new Date().toISOString().slice(0, 7)}`;
+            const body = [
+              '## 月次更新リマインド',
+              '',
+              'Culture Calendar を月1回更新するタイミングです。',
+              '',
+              '1. `public/artists.json` を確認',
+              '2. Cursor で音楽（core→related）と美術（Tokyo Art Beat）を収集',
+              '3. `public/events.json` を更新',
+              '4. commit & push（Vercel が自動デプロイ）',
+              '',
+              '詳細: `docs/UPDATE_CADENCE.md`',
+            ].join('\n');
+
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'monthly-update',
+              per_page: 5,
+            });
+
+            const exists = issues.data.some((i) => i.title === title);
+            if (exists) {
+              core.info('Issue already exists for this month');
+              return;
+            }
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['monthly-update'],
+            });
