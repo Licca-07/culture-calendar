@@ -1,132 +1,15 @@
 [
   {
-    "id": "sakanaction-budokan-2026-09-08",
-    "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
-    "type": "music",
+    "id": "rfw-tokyo-2027ss",
+    "title": "Rakuten Fashion Week TOKYO 2027 S/S",
+    "type": "fashion",
     "city": "tokyo",
-    "venue": "日本武道館",
-    "start": "2026-09-08",
-    "end": "2026-09-09",
-    "url": "https://sakanaction.jp/feature/tour2026-2027",
-    "source": "official",
-    "artists": ["sakanaction"],
-    "notes": "core。OPEN/STARTは日により異なる"
-  },
-  {
-    "id": "sakanaction-budokan-2026-09-18",
-    "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
-    "type": "music",
-    "city": "tokyo",
-    "venue": "日本武道館",
-    "start": "2026-09-18",
-    "end": "2026-09-19",
-    "url": "https://sakanaction.jp/feature/tour2026-2027",
-    "source": "official",
-    "artists": ["sakanaction"],
-    "notes": "core"
-  },
-  {
-    "id": "sakanaction-budokan-2026-10-03",
-    "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
-    "type": "music",
-    "city": "tokyo",
-    "venue": "日本武道館",
-    "start": "2026-10-03",
-    "end": "2026-10-04",
-    "url": "https://sakanaction.jp/feature/tour2026-2027",
-    "source": "official",
-    "artists": ["sakanaction"],
-    "notes": "core。東京公演の締め"
-  },
-  {
-    "id": "vaundy-makuhari-2026-09-05",
-    "title": "Vaundy ASIA ARENA TOUR 2026 “HORO”",
-    "type": "music",
-    "city": "tokyo",
-    "venue": "幕張メッセ 9・11ホール（千葉）",
-    "start": "2026-09-05",
-    "end": "2026-09-06",
-    "url": "https://lignea.co.jp/vaundy/",
-    "source": "livenex",
-    "artists": ["vaundy"],
-    "notes": "core。首都圏公演として掲載"
-  },
-  {
-    "id": "kroi-haneda-2026-09-22",
-    "title": "Kroi Live Tour 2026 “JUNGLE”",
-    "type": "music",
-    "city": "tokyo",
-    "venue": "Zepp Haneda（TOKYO）",
-    "start": "2026-09-22",
-    "end": "2026-09-22",
-    "url": "https://special.kroi.net/tour/",
-    "source": "official",
-    "artists": ["kroi"],
-    "notes": "core。w/ 東京スカパラダイスオーケストラ（Dig the Deep）"
-  },
-  {
-    "id": "kroi-haneda-2026-09-23",
-    "title": "Kroi Live Tour 2026 “JUNGLE” ONEMAN",
-    "type": "music",
-    "city": "tokyo",
-    "venue": "Zepp Haneda（TOKYO）",
-    "start": "2026-09-23",
-    "end": "2026-09-23",
-    "url": "https://special.kroi.net/tour/",
-    "source": "official",
-    "artists": ["kroi"],
-    "notes": "core。ワンマン"
-  },
-  {
-    "id": "stuts-shibuya-2026-10-18",
-    "title": "SHIBUYA SYMPHONIC BEAT（STUTSほか）",
-    "type": "music",
-    "city": "tokyo",
-    "venue": "LINE CUBE SHIBUYA",
-    "start": "2026-10-18",
-    "end": "2026-10-18",
-    "url": "https://prtimes.jp/main/html/rd/p/000003918.000004829.html",
-    "source": "official",
-    "artists": ["stuts"],
-    "notes": "core。東フィル共演。開場12:45 / 開演13:30"
-  },
-  {
-    "id": "suchmos-kyoto-onpaku-2026",
-    "title": "京都音楽博覧会2026（Suchmos出演）",
-    "type": "music",
-    "city": "kyoto",
-    "venue": "梅小路公園",
-    "start": "2026-10-10",
-    "end": "2026-10-11",
-    "url": "https://kyotoonpaku.net/2026/",
-    "source": "official",
-    "artists": ["suchmos"],
-    "notes": "core。くるり主催。Suchmosはラインナップに含まれる"
-  },
-  {
-    "id": "halley-2026-11-19",
-    "title": "HALLEY Born with Love Tour 2026",
-    "type": "music",
-    "city": "tokyo",
-    "venue": "代官山 SPACE ODD",
-    "start": "2026-11-19",
-    "end": "2026-11-19",
-    "url": "https://www.halley-official.com/",
-    "source": "official",
-    "artists": ["halley"],
-    "notes": "core。Open 18:15 / Start 19:00"
-  },
-  {
-    "id": "louvre-nact-2026",
-    "title": "ルーヴル美術館展 ルネサンス",
-    "type": "art",
-    "city": "tokyo",
-    "venue": "国立新美術館",
-    "start": "2026-09-09",
-    "end": "2026-12-13",
-    "url": "https://www.nact.jp/exhibition_special/2026/louvre2026/",
-    "source": "tokyo-art-beat",
-    "notes": "火休館（祝日例外あり）"
+    "venue": "渋谷ヒカリエほか",
+    "start": "2026-08-31",
+    "end": "2026-09-05",
+    "url": "https://rakutenfashionweektokyo.com/jp/",
+    "source": "fashion-snap",
+    "notes": "FASHIONSNAP オフィシャルSNAP企画あり"
   },
   {
     "id": "hirako-hibiya-2026",
@@ -141,6 +24,48 @@
     "notes": "会期中無休。11:00–20:00"
   },
   {
+    "id": "vaundy-makuhari-2026-09-05",
+    "title": "Vaundy ASIA ARENA TOUR 2026 “HORO”",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "幕張メッセ 9・11ホール（千葉）",
+    "start": "2026-09-05",
+    "end": "2026-09-06",
+    "url": "https://lignea.co.jp/vaundy/",
+    "source": "livenex",
+    "artists": [
+      "vaundy"
+    ],
+    "notes": "core。首都圏公演として掲載"
+  },
+  {
+    "id": "sakanaction-budokan-2026-09-08",
+    "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "日本武道館",
+    "start": "2026-09-08",
+    "end": "2026-09-09",
+    "url": "https://sakanaction.jp/feature/tour2026-2027",
+    "source": "official",
+    "artists": [
+      "sakanaction"
+    ],
+    "notes": "core。OPEN/STARTは日により異なる"
+  },
+  {
+    "id": "louvre-nact-2026",
+    "title": "ルーヴル美術館展 ルネサンス",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "国立新美術館",
+    "start": "2026-09-09",
+    "end": "2026-12-13",
+    "url": "https://www.nact.jp/exhibition_special/2026/louvre2026/",
+    "source": "tokyo-art-beat",
+    "notes": "火休館（祝日例外あり）"
+  },
+  {
     "id": "uno-eki-kyoto-2026",
     "title": "宇野亞喜良展 AQUIRAX UNO",
     "type": "art",
@@ -151,6 +76,54 @@
     "url": "https://prtimes.jp/main/html/rd/p/000000441.000021989.html",
     "source": "tokyo-art-beat",
     "notes": "京都駅直結。会期中無休"
+  },
+  {
+    "id": "tranoi-tokyo-2026",
+    "title": "TRANOÏ TOKYO S/S 27（with Denim Première Vision）",
+    "type": "fashion",
+    "city": "tokyo",
+    "venue": "国立代々木競技場 第一体育館",
+    "start": "2026-09-09",
+    "end": "2026-09-10",
+    "url": "https://www.tranoi.com/e/tokyo/ja",
+    "source": "fashion-snap",
+    "notes": "10:00–19:00"
+  },
+  {
+    "id": "tomo-koizumi-mizen-2026",
+    "title": "TOMO KOIZUMI展『色をまとい、夢を縫う』",
+    "type": "fashion",
+    "city": "tokyo",
+    "venue": "MIZEN TOKYO Atelier+Showroom",
+    "start": "2026-09-10",
+    "end": "2026-09-19",
+    "url": "https://rakutenfashionweektokyo.com/jp/topics/pickup/rakutenfwt2027ss/",
+    "source": "fashion-snap",
+    "notes": "一般向け展示/受注。予約制"
+  },
+  {
+    "id": "tanaami-nanzuka-2026",
+    "title": "田名網敬一 DO NOT BOMB",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "NANZUKA（渋谷アクシュ）",
+    "start": "2026-09-12",
+    "end": "2026-10-17",
+    "url": "https://www.fashionsnap.com/article/2026-08-17/keiichi-tanaami-exhibition-2026/",
+    "source": "fashion-snap",
+    "notes": "FASHIONSNAP掲載。日曜休廊"
+  },
+  {
+    "id": "osamu-goods-kyoto-2026",
+    "title": "OSAMU GOODS 50th展",
+    "type": "art",
+    "city": "kyoto",
+    "venue": "大丸ミュージアム〈京都〉",
+    "start": "2026-09-13",
+    "end": "2026-10-05",
+    "url": "https://www.leafkyoto.net/event/260906-kyoto-osamugoods/",
+    "source": "official",
+    "notes": ""
   },
   {
     "id": "moon-art-shimokita-2026",
@@ -165,6 +138,87 @@
     "notes": "街なか美術。散歩向き"
   },
   {
+    "id": "sakanaction-budokan-2026-09-18",
+    "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "日本武道館",
+    "start": "2026-09-18",
+    "end": "2026-09-19",
+    "url": "https://sakanaction.jp/feature/tour2026-2027",
+    "source": "official",
+    "artists": [
+      "sakanaction"
+    ],
+    "notes": "core"
+  },
+  {
+    "id": "tgc-2026-aw",
+    "title": "マイナビ TGC 2026 A/W",
+    "type": "fashion",
+    "city": "tokyo",
+    "venue": "横浜アリーナ",
+    "start": "2026-09-19",
+    "end": "2026-09-19",
+    "url": "https://entamerush.jp/709327/",
+    "source": "fashion-snap",
+    "notes": "開場12:00 / 開演14:00。首都圏として掲載"
+  },
+  {
+    "id": "kroi-haneda-2026-09-22",
+    "title": "Kroi Live Tour 2026 “JUNGLE”",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "Zepp Haneda（TOKYO）",
+    "start": "2026-09-22",
+    "end": "2026-09-22",
+    "url": "https://special.kroi.net/tour/",
+    "source": "official",
+    "artists": [
+      "kroi"
+    ],
+    "notes": "core。w/ 東京スカパラダイスオーケストラ（Dig the Deep）"
+  },
+  {
+    "id": "kroi-haneda-2026-09-23",
+    "title": "Kroi Live Tour 2026 “JUNGLE” ONEMAN",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "Zepp Haneda（TOKYO）",
+    "start": "2026-09-23",
+    "end": "2026-09-23",
+    "url": "https://special.kroi.net/tour/",
+    "source": "official",
+    "artists": [
+      "kroi"
+    ],
+    "notes": "core。ワンマン"
+  },
+  {
+    "id": "lisa-larson-matsuya-2026",
+    "title": "リサ・ラーソン 追悼展",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "松屋銀座 8階イベントスクエア",
+    "start": "2026-09-25",
+    "end": "2026-10-12",
+    "url": "https://www.fashionsnap.com/article/2026-08-08/lisa-larson-ginza-matsuya/",
+    "source": "fashion-snap",
+    "notes": "FASHIONSNAP掲載"
+  },
+  {
+    "id": "chanel-nexus-portraits-2026",
+    "title": "Icons and Image Makers ナショナル ポートレート ギャラリー展",
+    "type": "fashion",
+    "city": "tokyo",
+    "venue": "シャネル・ネクサス・ホール（銀座）",
+    "start": "2026-10-02",
+    "end": "2026-11-29",
+    "url": "https://www.fashionsnap.com/article/2026-09-03/icons-and-image-makers/",
+    "source": "fashion-snap",
+    "notes": "無料・予約不要"
+  },
+  {
     "id": "marimekko-teien-2026",
     "title": "マリメッコ展 模様のちから",
     "type": "art",
@@ -177,15 +231,99 @@
     "notes": "白金台"
   },
   {
-    "id": "osamu-goods-kyoto-2026",
-    "title": "OSAMU GOODS 50th展",
-    "type": "art",
-    "city": "kyoto",
-    "venue": "大丸ミュージアム〈京都〉",
-    "start": "2026-09-13",
-    "end": "2026-10-05",
-    "url": "https://www.leafkyoto.net/event/260906-kyoto-osamugoods/",
+    "id": "sakanaction-budokan-2026-10-03",
+    "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "日本武道館",
+    "start": "2026-10-03",
+    "end": "2026-10-04",
+    "url": "https://sakanaction.jp/feature/tour2026-2027",
     "source": "official",
-    "notes": ""
+    "artists": [
+      "sakanaction"
+    ],
+    "notes": "core。東京公演の締め"
+  },
+  {
+    "id": "faw-tokyo-2026-autumn",
+    "title": "FaW TOKYO（ファッション ワールド東京）秋展",
+    "type": "fashion",
+    "city": "tokyo",
+    "venue": "東京ビッグサイト",
+    "start": "2026-10-07",
+    "end": "2026-10-09",
+    "url": "https://www.fashion-tokyo.jp/autumn/ja-jp.html",
+    "source": "fashion-snap",
+    "notes": "10:00–17:00"
+  },
+  {
+    "id": "tokyo-atlas-2026",
+    "title": "国際美術展 TOKYO ATLAS",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "お台場・青海・天王洲ほか",
+    "start": "2026-10-10",
+    "end": "2026-12-20",
+    "url": "https://www.fashionsnap.com/article/2026-03-04/tokyo-atlas-art-exhibition/",
+    "source": "fashion-snap",
+    "notes": "FASHIONSNAP掲載。一部無料"
+  },
+  {
+    "id": "suchmos-kyoto-onpaku-2026",
+    "title": "京都音楽博覧会2026（Suchmos出演）",
+    "type": "music",
+    "city": "kyoto",
+    "venue": "梅小路公園",
+    "start": "2026-10-10",
+    "end": "2026-10-11",
+    "url": "https://kyotoonpaku.net/2026/",
+    "source": "official",
+    "artists": [
+      "suchmos"
+    ],
+    "notes": "core。くるり主催。Suchmosはラインナップに含まれる"
+  },
+  {
+    "id": "takeo-paper-show-50",
+    "title": "TAKEO PAPER SHOW 50『祝と礼』",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "KANDA SQUARE HALL",
+    "start": "2026-10-17",
+    "end": "2026-10-25",
+    "url": "https://www.fashionsnap.com/article/2026-07-25/takeo-paper-show-50/",
+    "source": "fashion-snap",
+    "notes": "原研哉企画。事前予約・無料"
+  },
+  {
+    "id": "stuts-shibuya-2026-10-18",
+    "title": "SHIBUYA SYMPHONIC BEAT（STUTSほか）",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "LINE CUBE SHIBUYA",
+    "start": "2026-10-18",
+    "end": "2026-10-18",
+    "url": "https://prtimes.jp/main/html/rd/p/000003918.000004829.html",
+    "source": "official",
+    "artists": [
+      "stuts"
+    ],
+    "notes": "core。東フィル共演。開場12:45 / 開演13:30"
+  },
+  {
+    "id": "halley-2026-11-19",
+    "title": "HALLEY Born with Love Tour 2026",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "代官山 SPACE ODD",
+    "start": "2026-11-19",
+    "end": "2026-11-19",
+    "url": "https://www.halley-official.com/",
+    "source": "official",
+    "artists": [
+      "halley"
+    ],
+    "notes": "core。Open 18:15 / Start 19:00"
   }
 ]

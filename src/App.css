@@ -196,6 +196,15 @@ h1 {
   background: var(--art);
 }
 
+.dots i.fashion {
+  background: #c97b8a;
+}
+
+.tag.fashion {
+  background: rgba(201, 123, 138, 0.2);
+  color: #e8a0ad;
+}
+
 .panel h3 {
   margin: 0 0 0.75rem;
   font-size: 1rem;

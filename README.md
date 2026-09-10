@@ -30,8 +30,9 @@ Claim: https://vercel.com/claim-deployment?code=7243014e-efcf-45d0-9f97-37c41c64
 
 | 分野 | 本線 |
 |------|------|
-| 美術 | Tokyo Art Beat |
-| 音楽 | MAKI core artists → related（LIVENEX/公式は補完） |
+| 美術 | Tokyo Art Beat / FASHIONSNAP掲載の展覧会 |
+| 音楽 | MAKI core artists → related |
+| ファッション | FASHIONSNAP calendar / Fashion Week 系 |
 
 - `public/artists.json` … 追う作家
 - `public/events.json` … カレンダー本体

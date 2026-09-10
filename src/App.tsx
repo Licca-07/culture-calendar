@@ -18,7 +18,7 @@ import './App.css'
 export type CultureEvent = {
   id: string
   title: string
-  type: 'music' | 'art'
+  type: 'music' | 'art' | 'fashion'
   city: 'tokyo' | 'kyoto'
   venue: string
   start: string
@@ -34,8 +34,14 @@ type ArtistSeed = {
   core?: { id: string; name: string }[]
 }
 
-type TypeFilter = 'all' | 'music' | 'art'
+type TypeFilter = 'all' | 'music' | 'art' | 'fashion'
 type CityFilter = 'all' | 'tokyo' | 'kyoto'
+
+const typeLabel: Record<CultureEvent['type'], string> = {
+  music: '音楽',
+  art: '美術',
+  fashion: 'ファッション',
+}
 
 function overlapsDay(event: CultureEvent, day: Date) {
   const start = parseISO(event.start)
@@ -113,6 +119,7 @@ export default function App() {
             ['all', 'すべて'],
             ['music', '音楽'],
             ['art', '美術'],
+            ['fashion', 'ファッション'],
           ] as const).map(([v, label]) => (
             <button key={v} className={type === v ? 'on' : ''} onClick={() => setType(v)}>
               {label}
@@ -188,7 +195,7 @@ export default function App() {
             {dayEvents.map((e) => (
               <li key={e.id}>
                 <a href={e.url} target="_blank" rel="noreferrer">
-                  <span className={`tag ${e.type}`}>{e.type === 'music' ? '音楽' : '美術'}</span>
+                  <span className={`tag ${e.type}`}>{typeLabel[e.type]}</span>
                   <span className="city">{e.city === 'tokyo' ? '東京' : '京都'}</span>
                   <strong>{e.title}</strong>
                   <em>{e.venue}</em>
@@ -206,7 +213,7 @@ export default function App() {
             <li key={e.id}>
               <a href={e.url} target="_blank" rel="noreferrer">
                 <time>{e.start === e.end ? e.start : `${e.start} → ${e.end}`}</time>
-                <span className={`tag ${e.type}`}>{e.type === 'music' ? '音楽' : '美術'}</span>
+                <span className={`tag ${e.type}`}>{typeLabel[e.type]}</span>
                 <strong>{e.title}</strong>
                 <em>
                   {e.city === 'tokyo' ? '東京' : '京都'} / {e.venue}
@@ -216,13 +223,6 @@ export default function App() {
           ))}
         </ul>
       </section>
-
-      <footer>
-        <p>Notion にはこのページのURLを貼る。</p>
-        <p className="sources">
-          美術: Tokyo Art Beat ほか / 音楽: LIVENEX・LiveScopra・公式
-        </p>
-      </footer>
     </div>
   )
 }
