@@ -25,7 +25,13 @@ export type CultureEvent = {
   end: string
   url: string
   source: string
+  artists?: string[]
   notes?: string
+}
+
+type ArtistSeed = {
+  makiImport?: { status?: string; instruction?: string }
+  core?: { id: string; name: string }[]
 }
 
 type TypeFilter = 'all' | 'music' | 'art'
@@ -39,6 +45,7 @@ function overlapsDay(event: CultureEvent, day: Date) {
 
 export default function App() {
   const [events, setEvents] = useState<CultureEvent[]>([])
+  const [artistSeed, setArtistSeed] = useState<ArtistSeed | null>(null)
   const [cursor, setCursor] = useState(() => startOfMonth(new Date(2026, 8, 1)))
   const [type, setType] = useState<TypeFilter>('all')
   const [city, setCity] = useState<CityFilter>('all')
@@ -49,6 +56,10 @@ export default function App() {
       .then((r) => r.json())
       .then((data: CultureEvent[]) => setEvents(data))
       .catch(() => setEvents([]))
+    fetch('/artists.json')
+      .then((r) => r.json())
+      .then((data: ArtistSeed) => setArtistSeed(data))
+      .catch(() => setArtistSeed(null))
   }, [])
 
   const filtered = useMemo(
@@ -89,6 +100,12 @@ export default function App() {
         <p className="eyebrow">Kyoto ↔ Tokyo</p>
         <h1>Culture Calendar</h1>
         <p className="lede">音楽と美術だけを、静かに並べる。</p>
+        {artistSeed?.makiImport?.status === 'missing' ? (
+          <p className="seed-note">
+            音楽はアーティスト起点。MAKIリスト未取り込み（いま core:{" "}
+            {(artistSeed.core ?? []).map((a) => a.name).join(", ") || "なし"}）。
+          </p>
+        ) : null}
       </header>
 
       <section className="filters" aria-label="フィルター">

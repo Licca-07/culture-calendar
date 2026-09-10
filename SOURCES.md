@@ -9,21 +9,30 @@ Notion にはこのWebアプリのURLを貼るだけ。収集は別レイヤー�
 - 注意: かつての公開APIは現状あてにしない。v1は **週次で人手／Cursorが拾って JSON に入れる**
 - 京都も TAB や公式館サイトで補完
 
-## 音楽 → 用途で分ける（TABの一社独占相当は無い）
+## 音楽 → アーティスト起点（本線）
 
-| レイヤー | 推奨 | 向いていること |
-|----------|------|----------------|
-| ホール〜ドームの公演一覧 | **[LIVENEX](https://livenex.live/)** | 東京／京都の「いつ何があるか」の俯瞰 |
-| ライブハウス細かい予定 | **[LiveScopra](https://livescopra.app/)** または **[GIGGS](https://giggs.eggs.mu/)** | 渋谷・下北・京都の箱もの |
-| チケットの正本リンク | **ぴあ / ローチケ / 公式** | 日付・開演・売りの確認 |
-| クラブ／DJ | iFLYER（任意） | 今のブランドでは優先度低め |
+集約サイトの全件スクレイプはしない。
+
+```text
+1. public/artists.json の core（MAKI実装時に羅列した作家が中心）
+2. それに紐づく related
+3. 補完検索だけ LIVENEX / LiveScopra / 公式
+```
+
+詳細: [`docs/MUSIC_ARTISTS.md`](./docs/MUSIC_ARTISTS.md)
+
+| レイヤー | 役割 |
+|----------|------|
+| `artists.json` | 誰を追うか（コア→関連） |
+| LIVENEX / LiveScopra / 公式 | その人たちの公演を探す |
+| ぴあ / ローチケ | チケット正本リンク |
 
 ### いまのおすすめ組み合わせ
 
 ```text
 美術: Tokyo Art Beat
-音楽: LIVENEX（広め） + LiveScopra/GIGGS（箱） + 気になる公演は公式URL
-自分メモ: events 気になるアーティスト／展を inbox に残す
+音楽: MAKI由来の core artists → related → 公式/LIVENEXで日程
+自分メモ: 気になる追加作家は artists.json に足す
 ```
 
 ぴあ WEB API は法人契約前提なので、個人のv1では使わない。

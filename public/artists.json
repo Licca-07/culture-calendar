@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "updated": "2026-09-10",
+  "strategy": {
+    "primary": "core_artists",
+    "secondary": "related_artists",
+    "cities": ["tokyo", "kyoto"],
+    "notes": "音楽イベントはまず core に出ているアーティストの公演を拾う。次に related（共演・同レーベル・近いシーン）を広げる。MAKI実装時の羅列リストを core に移植する想定。"
+  },
+  "core": [
+    {
+      "id": "halley",
+      "name": "HALLEY",
+      "priority": 1,
+      "links": {
+        "official": "https://www.halley-official.com/"
+      },
+      "notes": "Favorite Tea / Born with Love Pt. 1。MAKIリスト確認後に順位調整"
+    }
+  ],
+  "related": [
+    {
+      "id": "placeholder-related",
+      "name": "（MAKIリストから関連を追加）",
+      "relatedTo": ["halley"],
+      "priority": 50,
+      "notes": "共演者・同シーンを後で埋める"
+    }
+  ],
+  "makiImport": {
+    "status": "missing",
+    "instruction": "MAKI実装で羅列したアーティスト名を core[] に貼る。見つか次第 status を imported にする。"
+  }
+}

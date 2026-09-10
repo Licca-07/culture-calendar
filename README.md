@@ -10,7 +10,7 @@ Notion にはこのアプリのURLを貼るだけでよい。
 | 分野 | 本線 |
 |------|------|
 | 美術 | **Tokyo Art Beat** |
-| 音楽 | **LIVENEX**（俯瞰）+ **LiveScopra / GIGGS**（ライブハウス）+ 公式URL |
+| 音楽 | **MAKI由来の core artists → related**（LIVENEX/公式は検索補完） |
 
 v1 は自動スクレイピングせず、`public/events.json` を更新して公開する。
 

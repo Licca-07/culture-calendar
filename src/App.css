@@ -60,6 +60,16 @@ h1 {
   font-size: 1.05rem;
 }
 
+.seed-note {
+  margin: 0.85rem 0 0;
+  padding: 0.7rem 0.85rem;
+  border: 1px dashed rgba(196, 165, 116, 0.35);
+  border-radius: 12px;
+  color: var(--music);
+  font-size: 0.88rem;
+  font-family: "Avenir Next", "Hiragino Sans", sans-serif;
+}
+
 .filters {
   display: flex;
   flex-wrap: wrap;
