@@ -1,5 +1,109 @@
 [
   {
+    "id": "sakanaction-budokan-2026-09-08",
+    "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "日本武道館",
+    "start": "2026-09-08",
+    "end": "2026-09-09",
+    "url": "https://sakanaction.jp/feature/tour2026-2027",
+    "source": "official",
+    "artists": ["sakanaction"],
+    "notes": "core。OPEN/STARTは日により異なる"
+  },
+  {
+    "id": "sakanaction-budokan-2026-09-18",
+    "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "日本武道館",
+    "start": "2026-09-18",
+    "end": "2026-09-19",
+    "url": "https://sakanaction.jp/feature/tour2026-2027",
+    "source": "official",
+    "artists": ["sakanaction"],
+    "notes": "core"
+  },
+  {
+    "id": "sakanaction-budokan-2026-10-03",
+    "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "日本武道館",
+    "start": "2026-10-03",
+    "end": "2026-10-04",
+    "url": "https://sakanaction.jp/feature/tour2026-2027",
+    "source": "official",
+    "artists": ["sakanaction"],
+    "notes": "core。東京公演の締め"
+  },
+  {
+    "id": "vaundy-makuhari-2026-09-05",
+    "title": "Vaundy ASIA ARENA TOUR 2026 “HORO”",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "幕張メッセ 9・11ホール（千葉）",
+    "start": "2026-09-05",
+    "end": "2026-09-06",
+    "url": "https://lignea.co.jp/vaundy/",
+    "source": "livenex",
+    "artists": ["vaundy"],
+    "notes": "core。首都圏公演として掲載"
+  },
+  {
+    "id": "kroi-haneda-2026-09-22",
+    "title": "Kroi Live Tour 2026 “JUNGLE”",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "Zepp Haneda（TOKYO）",
+    "start": "2026-09-22",
+    "end": "2026-09-22",
+    "url": "https://special.kroi.net/tour/",
+    "source": "official",
+    "artists": ["kroi"],
+    "notes": "core。w/ 東京スカパラダイスオーケストラ（Dig the Deep）"
+  },
+  {
+    "id": "kroi-haneda-2026-09-23",
+    "title": "Kroi Live Tour 2026 “JUNGLE” ONEMAN",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "Zepp Haneda（TOKYO）",
+    "start": "2026-09-23",
+    "end": "2026-09-23",
+    "url": "https://special.kroi.net/tour/",
+    "source": "official",
+    "artists": ["kroi"],
+    "notes": "core。ワンマン"
+  },
+  {
+    "id": "stuts-shibuya-2026-10-18",
+    "title": "SHIBUYA SYMPHONIC BEAT（STUTSほか）",
+    "type": "music",
+    "city": "tokyo",
+    "venue": "LINE CUBE SHIBUYA",
+    "start": "2026-10-18",
+    "end": "2026-10-18",
+    "url": "https://prtimes.jp/main/html/rd/p/000003918.000004829.html",
+    "source": "official",
+    "artists": ["stuts"],
+    "notes": "core。東フィル共演。開場12:45 / 開演13:30"
+  },
+  {
+    "id": "suchmos-kyoto-onpaku-2026",
+    "title": "京都音楽博覧会2026（Suchmos出演）",
+    "type": "music",
+    "city": "kyoto",
+    "venue": "梅小路公園",
+    "start": "2026-10-10",
+    "end": "2026-10-11",
+    "url": "https://kyotoonpaku.net/2026/",
+    "source": "official",
+    "artists": ["suchmos"],
+    "notes": "core。くるり主催。Suchmosはラインナップに含まれる"
+  },
+  {
     "id": "halley-2026-11-19",
     "title": "HALLEY Born with Love Tour 2026",
     "type": "music",
@@ -10,7 +114,7 @@
     "url": "https://www.halley-official.com/",
     "source": "official",
     "artists": ["halley"],
-    "notes": "Open 18:15 / Start 19:00。Favorite Tea の流れ"
+    "notes": "core。Open 18:15 / Start 19:00"
   },
   {
     "id": "louvre-nact-2026",
@@ -25,6 +129,18 @@
     "notes": "火休館（祝日例外あり）"
   },
   {
+    "id": "hirako-hibiya-2026",
+    "title": "平子雄一 HUMAN AND NATURE",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "東京ミッドタウン日比谷ホール",
+    "start": "2026-09-05",
+    "end": "2026-10-18",
+    "url": "https://www.tokyoartbeat.com/articles/-/yuichi-hirako-human-and-nature-report-20209",
+    "source": "tokyo-art-beat",
+    "notes": "会期中無休。11:00–20:00"
+  },
+  {
     "id": "uno-eki-kyoto-2026",
     "title": "宇野亞喜良展 AQUIRAX UNO",
     "type": "art",
@@ -32,45 +148,21 @@
     "venue": "美術館「えき」KYOTO",
     "start": "2026-09-09",
     "end": "2026-10-25",
-    "url": "https://ja.kyoto.travel/event/single.php?event_id=15145",
-    "source": "official",
-    "notes": "京都駅直結"
+    "url": "https://prtimes.jp/main/html/rd/p/000000441.000021989.html",
+    "source": "tokyo-art-beat",
+    "notes": "京都駅直結。会期中無休"
   },
   {
-    "id": "agawa-billboard-2026-09-10",
-    "title": "阿川泰子 CROSSOVER NIGHT 2026",
-    "type": "music",
+    "id": "moon-art-shimokita-2026",
+    "title": "ムーンアートナイト下北沢",
+    "type": "art",
     "city": "tokyo",
-    "venue": "Billboard Live TOKYO",
-    "start": "2026-09-10",
-    "end": "2026-09-10",
-    "url": "https://www.billboard-live.com/tokyo/show?date=2026-09-10&event_id=ev-21471",
-    "source": "livenex",
-    "notes": "1st 17:00 / 2nd 20:00"
-  },
-  {
-    "id": "elephant-gym-wwwx-2026-09-10",
-    "title": "Elephant Gym / MASS OF THE FERMENTING DREGS",
-    "type": "music",
-    "city": "tokyo",
-    "venue": "渋谷 WWW X",
-    "start": "2026-09-10",
-    "end": "2026-09-10",
-    "url": "https://www-shibuya.jp/schedule/019788.php",
-    "source": "livescopra",
-    "notes": "FLAKE 20th 関連"
-  },
-  {
-    "id": "kyoto-onpaku-2026",
-    "title": "京都音楽博覧会2026",
-    "type": "music",
-    "city": "kyoto",
-    "venue": "京都",
-    "start": "2026-10-10",
-    "end": "2026-10-11",
-    "url": "https://kyotoonpaku.net/2026/",
-    "source": "official",
-    "notes": "2DAYS"
+    "venue": "下北線路街 空き地ほか",
+    "start": "2026-09-18",
+    "end": "2026-10-04",
+    "url": "https://www.tokyoartbeat.com/articles/-/best-exhibitions-starting-in-september-2026-202608",
+    "source": "tokyo-art-beat",
+    "notes": "街なか美術。散歩向き"
   },
   {
     "id": "marimekko-teien-2026",
@@ -83,30 +175,6 @@
     "url": "https://www.teien-art-museum.ne.jp/exhibition/20261003-1220_marimekko/",
     "source": "tokyo-art-beat",
     "notes": "白金台"
-  },
-  {
-    "id": "10feet-kyoto-2026-10-03",
-    "title": "10-FEET 壊れて消えるまで FINAL",
-    "type": "music",
-    "city": "kyoto",
-    "venue": "みやこめっせ",
-    "start": "2026-10-03",
-    "end": "2026-10-03",
-    "url": "https://10-feet.kyoto/pages/kowaretekierumade_final",
-    "source": "livenex",
-    "notes": ""
-  },
-  {
-    "id": "moon-art-shimokita-2026",
-    "title": "ムーンアートナイト下北沢",
-    "type": "art",
-    "city": "tokyo",
-    "venue": "下北線路街 空き地ほか",
-    "start": "2026-09-18",
-    "end": "2026-10-04",
-    "url": "https://www.tokyoartbeat.com/articles/-/best-exhibitions-starting-in-september-2026-202608",
-    "source": "tokyo-art-beat",
-    "notes": "街なか美術"
   },
   {
     "id": "osamu-goods-kyoto-2026",
