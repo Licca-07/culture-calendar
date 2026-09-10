@@ -13,10 +13,9 @@
 
 ## MAKIリスト
 
-`public/artists.json` の `core` に、MAKI実装時に羅列したアーティストを入れる。
+`public/artists.json` の `core` に **45組** を取り込み済み（`makiImport.status = imported`）。
 
-今のリポジトリ群からはその一覧を特定できなかったため、`makiImport.status = missing`。  
-リストを受け取ったら核心に移植する。
+収集時は東京・京都の公演を優先。海外アーティストは来日・国内公演のみ。
 
 ## Cursorへの依頼文
 
