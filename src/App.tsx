@@ -96,7 +96,7 @@ export default function App() {
       [...filtered]
         .filter((e) => parseISO(e.end) >= new Date(2026, 8, 10))
         .sort((a, b) => a.start.localeCompare(b.start))
-        .slice(0, 12),
+        .slice(0, 16),
     [filtered],
   )
 
@@ -108,7 +108,7 @@ export default function App() {
         {artistSeed?.makiImport?.status === 'missing' ? (
           <p className="seed-note">
             音楽はアーティスト起点。MAKIリスト未取り込み（いま core:{" "}
-            {(artistSeed.core ?? []).map((a) => a.name).join(", ") || "なし"}）。
+            {(artistSeed.core ?? []).map((a) => a.name).join(', ') || 'なし'}）。
           </p>
         ) : null}
       </header>
@@ -139,90 +139,94 @@ export default function App() {
         </div>
       </section>
 
-      <section className="calendar-wrap">
-        <div className="month-nav">
-          <button onClick={() => setCursor((c) => addMonths(c, -1))} aria-label="前月">
-            ‹
-          </button>
-          <h2>{format(cursor, 'yyyy年 M月', { locale: ja })}</h2>
-          <button onClick={() => setCursor((c) => addMonths(c, 1))} aria-label="翌月">
-            ›
-          </button>
-        </div>
+      <div className="layout">
+        <aside className="calendar-wrap">
+          <div className="month-nav">
+            <button onClick={() => setCursor((c) => addMonths(c, -1))} aria-label="前月">
+              ‹
+            </button>
+            <h2>{format(cursor, 'yyyy年 M月', { locale: ja })}</h2>
+            <button onClick={() => setCursor((c) => addMonths(c, 1))} aria-label="翌月">
+              ›
+            </button>
+          </div>
 
-        <div className="dow">
-          {['日', '月', '火', '水', '木', '金', '土'].map((d) => (
-            <span key={d}>{d}</span>
-          ))}
-        </div>
-
-        <div className="grid">
-          {days.map((day) => {
-            const marks = filtered.filter((e) => overlapsDay(e, day))
-            const inMonth = isSameMonth(day, cursor)
-            const isSelected = selected && isSameDay(day, selected)
-            return (
-              <button
-                key={day.toISOString()}
-                className={[
-                  'cell',
-                  inMonth ? '' : 'muted',
-                  isSelected ? 'selected' : '',
-                  marks.length ? 'has' : '',
-                ].join(' ')}
-                onClick={() => setSelected(day)}
-              >
-                <span className="num">{format(day, 'd')}</span>
-                <span className="dots">
-                  {marks.slice(0, 3).map((m) => (
-                    <i key={m.id} className={m.type} />
-                  ))}
-                </span>
-              </button>
-            )
-          })}
-        </div>
-      </section>
-
-      <section className="panel">
-        <h3>
-          {selected ? format(selected, 'M月d日（E）', { locale: ja }) : '日付を選択'}
-        </h3>
-        {dayEvents.length === 0 ? (
-          <p className="empty">この日の予定はまだない。</p>
-        ) : (
-          <ul className="list">
-            {dayEvents.map((e) => (
-              <li key={e.id}>
-                <a href={e.url} target="_blank" rel="noreferrer">
-                  <span className={`tag ${e.type}`}>{typeLabel[e.type]}</span>
-                  <span className="city">{e.city === 'tokyo' ? '東京' : '京都'}</span>
-                  <strong>{e.title}</strong>
-                  <em>{e.venue}</em>
-                </a>
-              </li>
+          <div className="dow">
+            {['日', '月', '火', '水', '木', '金', '土'].map((d) => (
+              <span key={d}>{d}</span>
             ))}
-          </ul>
-        )}
-      </section>
+          </div>
 
-      <section className="panel upcoming">
-        <h3>これから</h3>
-        <ul className="list">
-          {upcoming.map((e) => (
-            <li key={e.id}>
-              <a href={e.url} target="_blank" rel="noreferrer">
-                <time>{e.start === e.end ? e.start : `${e.start} → ${e.end}`}</time>
-                <span className={`tag ${e.type}`}>{typeLabel[e.type]}</span>
-                <strong>{e.title}</strong>
-                <em>
-                  {e.city === 'tokyo' ? '東京' : '京都'} / {e.venue}
-                </em>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
+          <div className="grid">
+            {days.map((day) => {
+              const marks = filtered.filter((e) => overlapsDay(e, day))
+              const inMonth = isSameMonth(day, cursor)
+              const isSelected = selected && isSameDay(day, selected)
+              return (
+                <button
+                  key={day.toISOString()}
+                  className={[
+                    'cell',
+                    inMonth ? '' : 'muted',
+                    isSelected ? 'selected' : '',
+                    marks.length ? 'has' : '',
+                  ].join(' ')}
+                  onClick={() => setSelected(day)}
+                >
+                  <span className="num">{format(day, 'd')}</span>
+                  <span className="dots">
+                    {marks.slice(0, 3).map((m) => (
+                      <i key={m.id} className={m.type} />
+                    ))}
+                  </span>
+                </button>
+              )
+            })}
+          </div>
+        </aside>
+
+        <section className="events-col" aria-label="イベント">
+          <div className="panel">
+            <h3>
+              {selected ? format(selected, 'M月d日（E）', { locale: ja }) : '日付を選択'}
+            </h3>
+            {dayEvents.length === 0 ? (
+              <p className="empty">この日の予定はまだない。</p>
+            ) : (
+              <ul className="list">
+                {dayEvents.map((e) => (
+                  <li key={e.id}>
+                    <a href={e.url} target="_blank" rel="noreferrer">
+                      <span className={`tag ${e.type}`}>{typeLabel[e.type]}</span>
+                      <span className="city">{e.city === 'tokyo' ? '東京' : '京都'}</span>
+                      <strong>{e.title}</strong>
+                      <em>{e.venue}</em>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          <div className="panel upcoming">
+            <h3>これから</h3>
+            <ul className="list">
+              {upcoming.map((e) => (
+                <li key={e.id}>
+                  <a href={e.url} target="_blank" rel="noreferrer">
+                    <time>{e.start === e.end ? e.start : `${e.start} → ${e.end}`}</time>
+                    <span className={`tag ${e.type}`}>{typeLabel[e.type]}</span>
+                    <strong>{e.title}</strong>
+                    <em>
+                      {e.city === 'tokyo' ? '東京' : '京都'} / {e.venue}
+                    </em>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }
