@@ -12,7 +12,7 @@ import {
   startOfMonth,
   startOfWeek,
 } from 'date-fns'
-import { ja } from 'date-fns/locale'
+import { enUS, ja } from 'date-fns/locale'
 import './App.css'
 
 export type CultureEvent = {
@@ -56,13 +56,14 @@ export default function App() {
   const [type, setType] = useState<TypeFilter>('all')
   const [city, setCity] = useState<CityFilter>('all')
   const [selected, setSelected] = useState<Date | null>(new Date(2026, 8, 10))
+  const [today] = useState(() => new Date())
 
   useEffect(() => {
-    fetch('/events.json')
+    fetch('./events.json')
       .then((r) => r.json())
       .then((data: CultureEvent[]) => setEvents(data))
       .catch(() => setEvents([]))
-    fetch('/artists.json')
+    fetch('./artists.json')
       .then((r) => r.json())
       .then((data: ArtistSeed) => setArtistSeed(data))
       .catch(() => setArtistSeed(null))
@@ -100,21 +101,50 @@ export default function App() {
     [filtered],
   )
 
+  const editionDate = selected ?? today
+  const enDate = format(editionDate, 'MMMM d, yyyy', { locale: enUS })
+  const jaDate = format(editionDate, 'yyyy年M月d日（E）', { locale: ja })
+  const weekLabel = format(editionDate, 'EEEE', { locale: enUS }).toUpperCase()
+
   return (
     <div className="page">
-      <header className="hero">
-        <p className="eyebrow">Kyoto ↔ Tokyo</p>
-        <h1>Culture Calendar</h1>
-        {artistSeed?.makiImport?.status === 'missing' ? (
-          <p className="seed-note">
-            音楽はアーティスト起点。MAKIリスト未取り込み（いま core:{" "}
-            {(artistSeed.core ?? []).map((a) => a.name).join(', ') || 'なし'}）。
+      <header className="masthead">
+        <div className="rule-double" aria-hidden="true" />
+        <p className="issue-line">
+          <span>VOL. 1</span>
+          <span aria-hidden="true">·</span>
+          <span>WEEKDAY EDITION</span>
+          <span aria-hidden="true">·</span>
+          <span>KYOTO ↔ TOKYO</span>
+        </p>
+        <h1 className="brand">Culture Calendar</h1>
+        <div className="rule-double" aria-hidden="true" />
+        <div className="dateline">
+          <p className="dateline-en">
+            {enDate} <span className="sep">—</span> MORNING EDITION <span className="sep">—</span>{' '}
+            {weekLabel}
           </p>
-        ) : null}
+          <p className="dateline-ja">{jaDate}</p>
+        </div>
+        <div className="meta-bar" aria-label="デスク">
+          <span>音楽 · 美術 · ファッション</span>
+          <span className="vbar" aria-hidden="true" />
+          <span>左：暦</span>
+          <span className="vbar" aria-hidden="true" />
+          <span>右：本日の欄</span>
+        </div>
+        <div className="rule-single" aria-hidden="true" />
       </header>
 
+      {artistSeed?.makiImport?.status === 'missing' ? (
+        <p className="seed-note">
+          音楽はアーティスト起点。MAKIリスト未取り込み（いま core:{' '}
+          {(artistSeed.core ?? []).map((a) => a.name).join(', ') || 'なし'}）。
+        </p>
+      ) : null}
+
       <section className="filters" aria-label="フィルター">
-        <div className="seg">
+        <div className="seg" role="group" aria-label="ジャンル">
           {([
             ['all', 'すべて'],
             ['music', '音楽'],
@@ -126,7 +156,7 @@ export default function App() {
             </button>
           ))}
         </div>
-        <div className="seg">
+        <div className="seg" role="group" aria-label="都市">
           {([
             ['all', '両都市'],
             ['tokyo', '東京'],
@@ -141,6 +171,7 @@ export default function App() {
 
       <div className="layout">
         <aside className="calendar-wrap">
+          <div className="section-kicker">CALENDAR DESK</div>
           <div className="month-nav">
             <button onClick={() => setCursor((c) => addMonths(c, -1))} aria-label="前月">
               ‹
@@ -187,6 +218,7 @@ export default function App() {
 
         <section className="events-col" aria-label="イベント">
           <div className="panel">
+            <div className="section-kicker">TODAY&apos;S COLUMN</div>
             <h3>
               {selected ? format(selected, 'M月d日（E）', { locale: ja }) : '日付を選択'}
             </h3>
@@ -209,6 +241,7 @@ export default function App() {
           </div>
 
           <div className="panel upcoming">
+            <div className="section-kicker">FORTHCOMING</div>
             <h3>これから</h3>
             <ul className="list">
               {upcoming.map((e) => (
@@ -227,6 +260,11 @@ export default function App() {
           </div>
         </section>
       </div>
+
+      <footer className="colophon">
+        <div className="rule-single" aria-hidden="true" />
+        <p>Printed for the quiet hours · Music · Art · Fashion</p>
+      </footer>
     </div>
   )
 }
