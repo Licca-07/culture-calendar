@@ -27,12 +27,25 @@ Notion にはこのWebアプリのURLを貼るだけ。収集は別レイヤー�
 | LIVENEX / LiveScopra / 公式 | その人たちの公演を探す |
 | ぴあ / ローチケ | チケット正本リンク |
 
+## 映画 → 定例フェス + Time Out（暫定本線）
+
+集約サイトの決定版はない。v1は次で回す。
+
+```text
+1. docs/FILM_SOURCES.md の定例リスト（日比谷／すみだ／新宿／麻布台／TIFF など）
+2. Time Out Tokyo の映画カテゴリで野外シネマ・映画祭を拾う
+3. 公式ページで日程・会場を正本確認
+```
+
+詳細: [`docs/FILM_SOURCES.md`](./docs/FILM_SOURCES.md)
+
 ### いまのおすすめ組み合わせ
 
 ```text
 美術: Tokyo Art Beat
 音楽: MAKI由来の core artists → related → 公式/LIVENEXで日程
-自分メモ: 気になる追加作家は artists.json に足す
+映画: 定例シネマフェス + Time Out Tokyo（映画）→ 公式で正本
+自分メモ: 気になる追加作家は artists.json に足す／定例映画祭は FILM_SOURCES に足す
 ```
 
 ぴあ WEB API は法人契約前提なので、個人のv1では使わない。
@@ -41,6 +54,6 @@ Notion にはこのWebアプリのURLを貼るだけ。収集は別レイヤー�
 
 - 集約した予定を **見やすくする**（カレンダー／リスト）
 - Notion に **1リンクで埋め込む**
-- 収集そのものは Cursor 週次 or 将来の取得スクリプト
+- 収集そのものは Cursor 月次（リマインド Issue）or 将来の取得スクリプト
 
 データは `public/events.json`。更新したらデプロイ（または git push → Vercel）。

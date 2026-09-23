@@ -29,11 +29,11 @@ jobs:
               'Culture Calendar を月1回更新するタイミングです。',
               '',
               '1. `public/artists.json` を確認',
-              '2. Cursor で音楽（core→related）と美術（Tokyo Art Beat）を収集',
+              '2. Cursor で音楽（core→related）・美術（Tokyo Art Beat）・映画（定例シネマフェス + Time Out）を収集',
               '3. `public/events.json` を更新',
               '4. commit & push（Vercel が自動デプロイ）',
               '',
-              '詳細: `docs/UPDATE_CADENCE.md`',
+              '詳細: `docs/UPDATE_CADENCE.md` / `docs/FILM_SOURCES.md`',
             ].join('\n');
 
             const issues = await github.rest.issues.listForRepo({

@@ -9,7 +9,10 @@
 
 ```text
 artists.json の core → related の順で、東京/京都の音楽イベントを直近2〜3ヶ月分拾って
-events.json を更新して。美術は Tokyo Art Beat 視点で足して。
+events.json を更新して。
+美術は Tokyo Art Beat 視点で足して。
+映画はシネマフェスティバル／映画祭（野外上映含む）を Time Out Tokyo 映画カテゴリと
+docs/FILM_SOURCES.md の定例リストから拾って足して。
 終わったイベントは削除 or アーカイブ。
 ```
 

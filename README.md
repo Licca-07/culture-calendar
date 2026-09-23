@@ -1,6 +1,6 @@
 # Culture Calendar
 
-京都⇄東京の **音楽 + 美術** イベントカレンダー（公開Webアプリ）。  
+京都⇄東京の **音楽 + 美術 + 映画** イベントカレンダー（公開Webアプリ）。  
 Notion にはこのサイトのURLを貼るだけ。
 
 **更新頻度: 月1回**（[`docs/UPDATE_CADENCE.md`](./docs/UPDATE_CADENCE.md)）
@@ -32,6 +32,7 @@ Claim: https://vercel.com/claim-deployment?code=7243014e-efcf-45d0-9f97-37c41c64
 |------|------|
 | 美術 | Tokyo Art Beat / FASHIONSNAP掲載の展覧会 |
 | 音楽 | MAKI core artists → related |
+| 映画 | 定例シネマフェス + Time Out Tokyo（[`docs/FILM_SOURCES.md`](./docs/FILM_SOURCES.md)） |
 | ファッション | FASHIONSNAP calendar / Fashion Week 系 |
 
 - `public/artists.json` … 追う作家
@@ -48,7 +49,8 @@ npm run dev
 
 ```text
 artists.json の core → related で東京/京都の音楽を直近2〜3ヶ月分拾って
-events.json を更新。美術は Tokyo Art Beat 視点で。過去分は削除。
+events.json を更新。美術は Tokyo Art Beat、映画は FILM_SOURCES の定例＋Time Out。
+過去分は削除。
 ```
 
 詳細: `docs/UPDATE_CADENCE.md`
