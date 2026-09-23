@@ -18,7 +18,7 @@ import './App.css'
 export type CultureEvent = {
   id: string
   title: string
-  type: 'music' | 'art' | 'fashion'
+  type: 'music' | 'art' | 'fashion' | 'film'
   city: 'tokyo' | 'kyoto'
   venue: string
   start: string
@@ -34,13 +34,14 @@ type ArtistSeed = {
   core?: { id: string; name: string }[]
 }
 
-type TypeFilter = 'all' | 'music' | 'art' | 'fashion'
+type TypeFilter = 'all' | 'music' | 'art' | 'fashion' | 'film'
 type CityFilter = 'all' | 'tokyo' | 'kyoto'
 
 const typeLabel: Record<CultureEvent['type'], string> = {
   music: '音楽',
   art: '美術',
   fashion: 'ファッション',
+  film: '映画',
 }
 
 function overlapsDay(event: CultureEvent, day: Date) {
@@ -127,7 +128,7 @@ export default function App() {
           <p className="dateline-ja">{jaDate}</p>
         </div>
         <div className="meta-bar" aria-label="デスク">
-          <span>音楽 · 美術 · ファッション</span>
+          <span>音楽 · 美術 · ファッション · 映画</span>
           <span className="vbar" aria-hidden="true" />
           <span>左：暦</span>
           <span className="vbar" aria-hidden="true" />
@@ -150,6 +151,7 @@ export default function App() {
             ['music', '音楽'],
             ['art', '美術'],
             ['fashion', 'ファッション'],
+            ['film', '映画'],
           ] as const).map(([v, label]) => (
             <button key={v} className={type === v ? 'on' : ''} onClick={() => setType(v)}>
               {label}
@@ -263,7 +265,7 @@ export default function App() {
 
       <footer className="colophon">
         <div className="rule-single" aria-hidden="true" />
-        <p>Printed for the quiet hours · Music · Art · Fashion</p>
+        <p>Printed for the quiet hours · Music · Art · Fashion · Film</p>
       </footer>
     </div>
   )

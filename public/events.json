@@ -12,18 +12,6 @@
     "notes": "FASHIONSNAP オフィシャルSNAP企画あり"
   },
   {
-    "id": "hirako-hibiya-2026",
-    "title": "平子雄一 HUMAN AND NATURE",
-    "type": "art",
-    "city": "tokyo",
-    "venue": "東京ミッドタウン日比谷ホール",
-    "start": "2026-09-05",
-    "end": "2026-10-18",
-    "url": "https://www.tokyoartbeat.com/articles/-/yuichi-hirako-human-and-nature-report-20209",
-    "source": "tokyo-art-beat",
-    "notes": "会期中無休。11:00–20:00"
-  },
-  {
     "id": "vaundy-makuhari-2026-09-05",
     "title": "Vaundy ASIA ARENA TOUR 2026 “HORO”",
     "type": "music",
@@ -37,6 +25,18 @@
       "vaundy"
     ],
     "notes": "core。首都圏公演として掲載"
+  },
+  {
+    "id": "hirako-hibiya-2026",
+    "title": "平子雄一 HUMAN AND NATURE",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "東京ミッドタウン日比谷ホール",
+    "start": "2026-09-05",
+    "end": "2026-10-18",
+    "url": "https://www.tokyoartbeat.com/articles/-/yuichi-hirako-human-and-nature-report-20209",
+    "source": "tokyo-art-beat",
+    "notes": "会期中無休。11:00–20:00"
   },
   {
     "id": "sakanaction-budokan-2026-09-08",
@@ -54,16 +54,16 @@
     "notes": "core。OPEN/STARTは日により異なる"
   },
   {
-    "id": "louvre-nact-2026",
-    "title": "ルーヴル美術館展 ルネサンス",
-    "type": "art",
+    "id": "tranoi-tokyo-2026",
+    "title": "TRANOÏ TOKYO S/S 27（with Denim Première Vision）",
+    "type": "fashion",
     "city": "tokyo",
-    "venue": "国立新美術館",
+    "venue": "国立代々木競技場 第一体育館",
     "start": "2026-09-09",
-    "end": "2026-12-13",
-    "url": "https://www.nact.jp/exhibition_special/2026/louvre2026/",
-    "source": "tokyo-art-beat",
-    "notes": "火休館（祝日例外あり）"
+    "end": "2026-09-10",
+    "url": "https://www.tranoi.com/e/tokyo/ja",
+    "source": "fashion-snap",
+    "notes": "10:00–19:00"
   },
   {
     "id": "uno-eki-kyoto-2026",
@@ -78,16 +78,16 @@
     "notes": "京都駅直結。会期中無休"
   },
   {
-    "id": "tranoi-tokyo-2026",
-    "title": "TRANOÏ TOKYO S/S 27（with Denim Première Vision）",
-    "type": "fashion",
+    "id": "louvre-nact-2026",
+    "title": "ルーヴル美術館展 ルネサンス",
+    "type": "art",
     "city": "tokyo",
-    "venue": "国立代々木競技場 第一体育館",
+    "venue": "国立新美術館",
     "start": "2026-09-09",
-    "end": "2026-09-10",
-    "url": "https://www.tranoi.com/e/tokyo/ja",
-    "source": "fashion-snap",
-    "notes": "10:00–19:00"
+    "end": "2026-12-13",
+    "url": "https://www.nact.jp/exhibition_special/2026/louvre2026/",
+    "source": "tokyo-art-beat",
+    "notes": "火休館（祝日例外あり）"
   },
   {
     "id": "tomo-koizumi-mizen-2026",
@@ -126,18 +126,6 @@
     "notes": ""
   },
   {
-    "id": "moon-art-shimokita-2026",
-    "title": "ムーンアートナイト下北沢",
-    "type": "art",
-    "city": "tokyo",
-    "venue": "下北線路街 空き地ほか",
-    "start": "2026-09-18",
-    "end": "2026-10-04",
-    "url": "https://www.tokyoartbeat.com/articles/-/best-exhibitions-starting-in-september-2026-202608",
-    "source": "tokyo-art-beat",
-    "notes": "街なか美術。散歩向き"
-  },
-  {
     "id": "sakanaction-budokan-2026-09-18",
     "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
     "type": "music",
@@ -151,6 +139,18 @@
       "sakanaction"
     ],
     "notes": "core"
+  },
+  {
+    "id": "moon-art-shimokita-2026",
+    "title": "ムーンアートナイト下北沢",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "下北線路街 空き地ほか",
+    "start": "2026-09-18",
+    "end": "2026-10-04",
+    "url": "https://www.tokyoartbeat.com/articles/-/best-exhibitions-starting-in-september-2026-202608",
+    "source": "tokyo-art-beat",
+    "notes": "街なか美術。散歩向き"
   },
   {
     "id": "tgc-2026-aw",
@@ -219,18 +219,6 @@
     "notes": "無料・予約不要"
   },
   {
-    "id": "marimekko-teien-2026",
-    "title": "マリメッコ展 模様のちから",
-    "type": "art",
-    "city": "tokyo",
-    "venue": "東京都庭園美術館",
-    "start": "2026-10-03",
-    "end": "2026-12-20",
-    "url": "https://www.teien-art-museum.ne.jp/exhibition/20261003-1220_marimekko/",
-    "source": "tokyo-art-beat",
-    "notes": "白金台"
-  },
-  {
     "id": "sakanaction-budokan-2026-10-03",
     "title": "サカナクション SAKANAQUARIUM 2026-2027 “透明”",
     "type": "music",
@@ -246,6 +234,18 @@
     "notes": "core。東京公演の締め"
   },
   {
+    "id": "marimekko-teien-2026",
+    "title": "マリメッコ展 模様のちから",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "東京都庭園美術館",
+    "start": "2026-10-03",
+    "end": "2026-12-20",
+    "url": "https://www.teien-art-museum.ne.jp/exhibition/20261003-1220_marimekko/",
+    "source": "tokyo-art-beat",
+    "notes": "白金台"
+  },
+  {
     "id": "faw-tokyo-2026-autumn",
     "title": "FaW TOKYO（ファッション ワールド東京）秋展",
     "type": "fashion",
@@ -258,16 +258,16 @@
     "notes": "10:00–17:00"
   },
   {
-    "id": "tokyo-atlas-2026",
-    "title": "国際美術展 TOKYO ATLAS",
-    "type": "art",
+    "id": "hibiya-cinema-festival-2026",
+    "title": "HIBIYA CINEMA FESTIVAL 2026",
+    "type": "film",
     "city": "tokyo",
-    "venue": "お台場・青海・天王洲ほか",
-    "start": "2026-10-10",
-    "end": "2026-12-20",
-    "url": "https://www.fashionsnap.com/article/2026-03-04/tokyo-atlas-art-exhibition/",
-    "source": "fashion-snap",
-    "notes": "FASHIONSNAP掲載。一部無料"
+    "venue": "東京ミッドタウン日比谷／日比谷公園／日比谷オクロジ",
+    "start": "2026-10-09",
+    "end": "2026-10-25",
+    "url": "https://www.hibiya.tokyo-midtown.com/jp/event/7556/",
+    "source": "official",
+    "notes": "入場無料。テーマは「ひたる」シネマ。公園会場（芝庭広場）は10/10–12。野外映画鑑賞"
   },
   {
     "id": "suchmos-kyoto-onpaku-2026",
@@ -283,6 +283,30 @@
       "suchmos"
     ],
     "notes": "core。くるり主催。Suchmosはラインナップに含まれる"
+  },
+  {
+    "id": "sumida-park-cinema-festival-2026",
+    "title": "すみだパークシネマフェスティバル 2026",
+    "type": "film",
+    "city": "tokyo",
+    "venue": "隅田公園 そよ風ひろば",
+    "start": "2026-10-10",
+    "end": "2026-10-12",
+    "url": "https://sumidapark-cinema.studio.site/",
+    "source": "official",
+    "notes": "入場無料。『ルックバック』『ラ・ラ・ランド』『ロボット・ドリームズ』など。野外映画鑑賞"
+  },
+  {
+    "id": "tokyo-atlas-2026",
+    "title": "国際美術展 TOKYO ATLAS",
+    "type": "art",
+    "city": "tokyo",
+    "venue": "お台場・青海・天王洲ほか",
+    "start": "2026-10-10",
+    "end": "2026-12-20",
+    "url": "https://www.fashionsnap.com/article/2026-03-04/tokyo-atlas-art-exhibition/",
+    "source": "fashion-snap",
+    "notes": "FASHIONSNAP掲載。一部無料"
   },
   {
     "id": "takeo-paper-show-50",
